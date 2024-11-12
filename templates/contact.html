@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="padding-top:125px;">
+    <!-- Top Portion: Contact Us and Description -->
+    <div class="text-center">
+        <h2>Contact Us</h2>
+        <p>
+            JBK Search works diligently to place qualified talent across the United States within the greatest biotech
+            businesses and organizations. Backed by thirty years of award-winning success, we stay abreast of the latest
+            news and trends in the biotech industry. If you would like to contact our Founder, Brenda Patterson, to
+            discuss your most critical need, please call or fill out the online form and Brenda will contact you to set
+            up a time to talk.
+        </p>
+        <hr>
+    </div>
+
+    <!-- Contact Form Container -->
+    <div class="container contact-container" style="width: 80%;">
+        <div class="row">
+            <!-- Left Side: Contact Information -->
+            <div class="col-md-6 contact-info">
+                <h3>JBK Search Corporation</h3>
+                <p>317-245-8085</p>
+                <p>brenda@jbksearch.com</p>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName">Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Please enter your name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="col">
+                            <label for="state">State</label>
+                            <input type="text" class="form-control" id="state" placeholder="State">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject">Upload Resume</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Resume">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject">Upload Job Description</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Job Description">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

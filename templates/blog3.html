@@ -1,0 +1,76 @@
+{% extends "blog_base.html" %}
+
+{% block title %}Inspiration Title{% endblock %}
+
+{% block content %}
+<div class="blog-post">
+    <h1>How working with drug companies fuels our passion</h1>
+    <p>Published on: <em>September 15, 2024</em></p>
+
+    <img src="/static/img/jbk-logo-color.png" class="img-responsive mb-4" alt="JBK Inspirations Photo">
+    <!-- NEED TO ADD A TAG OR SOMETHING TO CATEGORIZE THE POSTS. EXAMPLE: Interview Tips, Industry News, Company News, etc-->
+    <br>
+    <a href="{{ url_for('blog') }}" style="font-style: italic;">Inspirations</a>
+    <h1>Future of the biotech industry</h1>
+    <p class="lead">
+    <h3>Introduction</h3>
+    <p class="lead">The biotech industry is evolving rapidly, and with it, the recruitment process is also transforming.
+        As biotech
+        companies focus on innovation, recruiting top talent becomes more crucial than ever. This blog explores the
+        future of biotech recruiting and the trends shaping the industry.</p>
+    <h4>The Biotech Boom</h4>
+
+    <p class="lead">
+        Growth in the Industry: Biotech is experiencing unprecedented growth, driven by new technologies like CRISPR,
+        mRNA vaccines, and personalized medicine.
+        Why Talent Is Key: As biotech companies focus on innovation, they need skilled professionals who can drive these
+        advancements.
+    </p>
+    <h4>Key Trends Shaping Biotech Recruiting</h4>
+    <ol>
+        <li>Digital Recruiting: The rise of AI-driven recruitment tools and online platforms has made it easier for
+            companies to find and assess candidates. These tools can automate parts of the recruitment process, making
+            it
+            faster and more efficient.</li>
+        <li>Diversity and Inclusion: Companies are making conscious efforts to build more diverse teams. Why a diverse
+            workforce is important for innovation in biotech.</li>
+        <li>Remote Work in Biotech: The pandemic accelerated the shift toward remote work. Discuss the growing trend of
+            biotech professionals working remotely, especially in fields like data science and regulatory affairs.</li>
+    </ol>
+
+    <h4>The Role of Specialized Recruiters</h4>
+    Why Biotech Needs Specialized Recruiters: General recruiters may not have the expertise needed to assess
+    candidates in a complex, technical field like biotech.
+    Skills That Biotech Recruiters Look For: In addition to technical expertise, recruiters look for problem-solving
+    abilities, adaptability, and creativity.
+    How Recruiters Stay on Top of Industry Trends: Biotech recruiters need to understand the latest trends and
+    technologies in the industry to find the best candidates.
+
+
+    <h4>The Talent Shortage</h4>
+    Why There’s a Talent Shortage: As the biotech industry grows, there’s a growing demand for highly specialized
+    professionals. However, there’s a limited supply of talent with the required skills and experience.
+    How Companies Are Addressing the Shortage: Companies are investing in training and development to build talent
+    from within. They’re also partnering with universities to tap into emerging talent.
+
+    <h4>Recruiting for Leadership Roles in Biotech</h4>
+    Leadership in Biotech: The future of biotech relies not only on technical talent but also on strong leaders who
+    can navigate the complexities of the industry.
+    How to Attract Leaders: Discuss the importance of offering not just competitive salaries, but also opportunities
+    for growth, impactful work, and company culture.
+
+    <h4>The Future of Biotech Careers</h4>
+    Growing Fields: Regulatory affairs, data science, and personalized medicine are all fields that are expected to
+    grow rapidly in biotech.
+    New Opportunities for Candidates: As the biotech landscape evolves, new roles and opportunities will emerge for
+    professionals who are willing to adapt and grow.
+
+    Biotech recruiting is at a turning point. With new technologies and an increasing demand for specialized talent,
+    recruiters and companies must stay ahead of the curve to attract the best candidates. As the industry continues
+    to grow, so will the opportunities for talented individuals who want to shape the future of healthcare.
+    </p>
+
+
+    <a href="{{ url_for('blog') }}" class="btn btn-primary mt-4 mb-4">Back to Blog</a>
+</div>
+{% endblock %}

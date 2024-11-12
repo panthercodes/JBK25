@@ -1,0 +1,909 @@
+:root {
+    --primary-green: #439539;
+    --secondary-orange: #D3691B;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Arsenal", sans-serif;
+}
+
+a,
+li {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.navbar {
+    position: fixed;
+    /* Set position to fixed */
+    top: 0;
+    /* Stick the navbar to the top of the viewport */
+    width: 100%;
+    /* Ensure the navbar spans the full width of the viewport */
+    z-index: 1000;
+    /* Set a higher z-index value to ensure the navbar appears above other content */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+}
+
+.blockquote h3 {
+    font-weight: 700;
+}
+
+.black-bg {
+    background-color: black !important;
+    /* Forcefully set background color to black */
+}
+
+.navbar a {
+    color: white;
+}
+
+.jumbotron,
+.jumbotron .lead {
+    font-weight: 700;
+}
+
+
+.recruit-img {
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+    /* Adjust this as needed */
+}
+
+.expertise {
+
+    background-color: #F9F9F9;
+}
+
+.about-us {
+    font-size: 1.15em;
+    font-weight: 700;
+    background-color: #F9F9F9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/bgn-industries.png');
+    background-size: cover;
+    transform: rotate(180deg) scale(-1, -1);
+}
+
+.btn-primary {
+    background-color: #439539;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #439539;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.expertise .btn-primary:hover {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.expert-card {
+    color: white;
+    background-color: #439539;
+}
+
+
+.card-body {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-body a {
+    color: white;
+}
+
+.card-body a:hover {
+    color: black;
+}
+
+
+.tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list {
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem;
+}
+
+.scroller {
+    max-width: 900px;
+    max-height: 250px;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 120s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    max-height: 250px;
+}
+
+.scoller__inner img {
+    height: 175px;
+    width: 175px;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-100% - 0.5rem));
+    }
+}
+
+.hero-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../img/bg-image.jpg);
+    /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+}
+
+.typing-button {
+    position: absolute;
+    bottom: -75px;
+    /* Adjust vertical position as needed */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Cover the entire width */
+    height: 100%;
+    /* Cover the entire height */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black overlay */
+}
+
+.hero-box h1 {
+    z-index: 1;
+}
+
+#typing-text {
+    color: #439539;
+}
+
+.typing-container {
+    height: 20px;
+}
+
+/* .typing-container h1,
+h2 {
+    font-size: 4em;
+} */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container .btn {
+    margin: 0 10px;
+}
+
+.social-link {
+    margin: 0 5px;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.about-container {
+    background-image: url('../img/bgn-industries.png');
+    background-size: cover;
+
+}
+
+.quote-container {
+    background-image: url('../img/bgn-industries.png');
+    background-size: cover;
+    background-color: #F9F9F9;
+
+}
+
+@media screen and (max-width: 768px) {
+    .typing-container {
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .recruit-img {
+        width: 60%;
+        margin-bottom: 50px;
+        /* Adjust for smaller screens */
+    }
+
+}
+
+/* Adjust column widths */
+@media (min-width: 576px) {
+    .col-md-7 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+/* Reduce image size */
+.reduced-size {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    /* Adjust the max-height as needed */
+    border-radius: 20%;
+}
+
+.recruit-img {
+    width: 60%;
+    /* Further adjustment for very small screens */
+}
+
+
+/* Animation */
+.typing-animation {
+    animation: typing 4s steps(40, end), blink-caret 0.2s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-right-color: transparent;
+    }
+
+    50% {
+        border-right-color: #fff;
+    }
+}
+
+.footer-fill {
+    background-image: url('../img/bgn-industries.png');
+    background-size: cover;
+    background-color: #F9F9F9;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+footer a li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+footer a li:hover {
+    color: #439539;
+}
+
+.hero-box {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    /* Hero box takes 75% of the viewport height */
+    background-image: url('../img/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-content {
+    z-index: 10;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    /* Default font size for large screens */
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 3rem;
+    /* Default font size for large screens */
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    height: 25vh;
+    /* Jumbotron takes 25% of the viewport height */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jumbotron .container {
+    max-width: 800px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* Small screens: Make the navbar white with black links */
+@media (max-width: 992px) {
+    #navbar {
+        background-color: white !important;
+        /* Change navbar background to white */
+    }
+
+    #navbar .navbar-nav .nav-link {
+        color: black !important;
+        /* Change links to black */
+    }
+
+    /* Optional: Adjust the button colors */
+    #navbar .btn-outline-light {
+        border-color: black;
+        color: black;
+    }
+
+    #navbar .btn-primary {
+        background-color: #439539;
+        color: white;
+        border-color: black;
+    }
+
+    #default-logo {
+        content: url('../img/jbk-logo-color.png');
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+
+
+
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .jumbotron {
+        height: auto;
+        /* Allow jumbotron to expand as needed on small screens */
+        padding: 40px 20px;
+    }
+
+    .jumbotron .container {
+        padding: 0 15px;
+    }
+}
+
+.team-section {
+    background-image: url('../img/bgn-industries.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.custom-img {
+    width: 90%;
+    /* 20% smaller than the original size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.profile-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    /* Adjust based on content */
+}
+
+.profile-card img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    background-color: #439539;
+    /* Change the background color on hover */
+}
+
+.profile-details {
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.profile-info {
+    opacity: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.profile-info a:hover {
+    color: white;
+}
+
+.profile-card:hover .profile-details {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.profile-card:hover .profile-info {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    color: white;
+}
+
+
+
+.about-bio p a:hover {
+    background-color: #439539;
+    color: white;
+    padding: 5px;
+    border-radius: 4%;
+}
+
+.about-bio h2 {
+    color: #439539;
+}
+
+.about-bio h4 {
+    color: black;
+    font-weight: 700;
+
+}
+
+.bi {
+    margin-right: 5px;
+}
+
+
+
+.story-container {
+    background-color: white;
+
+    padding: 100px 50px 100px 50px;
+    border-radius: 10px;
+    margin-top: 100px;
+    /* Optional: to add rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    /* Optional: to add a subtle shadow */
+
+}
+
+.about-background {
+    background-image: url('../img/about_bg_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Ensures the background covers the entire viewport height */
+}
+
+
+/* Default navbar styles */
+#navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Initial background (transparent black) */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbar .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Scrolled navbar styles */
+#navbar.scrolled {
+    background-color: white !important;
+}
+
+#navbar.scrolled .navbar-nav .nav-link {
+    color: black !important;
+}
+
+#navbar.scrolled .btn-outline-light {
+    border-color: black;
+    color: black;
+}
+
+
+
+/* Hide the default logo and show the scrolled logo when scrolled */
+#navbar.scrolled #default-logo {
+    display: none;
+}
+
+
+#navbar.scrolled #scrolled-logo {
+    display: inline-block !important;
+    width: 100%;
+    height: 85px;
+    /* Set to your desired size */
+    height: auto;
+}
+
+.contact-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: both;
+    overflow: auto;
+    min-width: 100%;
+    box-sizing: border-box;
+    max-height: 500px;
+    /* Set your desired maximum height here */
+}
+
+.contact-btn {
+    width: 50%;
+    /* Set the width of the button to 50% */
+    display: block;
+    /* Make the button a block element so that margin auto works */
+    margin: 20px auto 0 auto;
+    /* Center the button horizontally and add some top margin */
+}
+
+.alert {
+    background-color: white;
+    border-color: #439539;
+}
+
+.services {
+    background-image: url('../img/about_bg_image.jpg');
+}
+
+.services-img {
+    height: auto;
+    width: 75%;
+}
+
+.services-cta {
+    background-image: url('../img/bgn-industries.png');
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #333;
+    /* Matches the dark theme of the navbar */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #439539;
+    /* Hover color */
+    color: white;
+}
+
+/* Hero Section */
+.hero-banner {
+    position: relative;
+
+    height: 30vh;
+    background-image: url('../img/blog-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 125px 50px 25px 50px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero content on the left */
+.hero-content-left {
+    max-width: 40%;
+}
+
+.hero-content-left h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content-left p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Hero content on the right */
+.hero-content-right {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-content-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-grid {
+    margin-top: 50px;
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content-left,
+    .hero-content-right {
+        max-width: 100%;
+    }
+
+    .hero-content-left h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content-right h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.research-section h5 {
+    display: inline;
+    color: #439539;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    /* Adjust the spacing between h4 and p */
+}
+
+.research-section p {
+    display: inline;
+    /* Ensures the paragraph flows right after the h4 */
+    margin-left: 0;
+}
+
+.blog-img {
+    width: auto;
+    height: 100%;
+}
+
+/* No Rest Page */
+.no-rest-title {
+    background-image: url('../static/img/bgn-industries');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section-header {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #439539;
+}
+
+.section-content {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 5px solid #439539;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #D3691B;
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+.call-to-action {
+    background-color: #D3691B;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+}

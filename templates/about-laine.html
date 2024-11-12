@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block body_class %}about-background{% endblock %}
+
+{% block title %}Laine's Story - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<div class="container story-container" style="padding-top: 125px;">
+    <!-- Top Section: Photo and Employee Details -->
+    <div class="row mb-5">
+        <!-- Left column for the image -->
+        <div class="col-md-4">
+            <img src="../static/img/laine-linkedin.jpg" class="img-fluid rounded-circle" alt="Laine's Employee Photo">
+        </div>
+
+        <!-- Right column for the details -->
+        <div class="about-bio col-md-8 d-flex flex-column justify-content-center">
+            <h2 class="mb-1">Laine Tongren</h2>
+            <h4 class="text-muted mb-3">Sourcing Recruiter</h4>
+            <p class="mb-2"><a href="tel:317-245-8085" class="lead"><i class="bi bi-telephone mr-5"> </i>Office:
+                    317-245-8085</a></p>
+            <!-- <p class="mb-2"><a href="tel:317-513-4188" class="lead"><i class="bi bi-phone"></i> Cell: 317-513-4188</a>
+            </p> -->
+
+            <p class="mb-2"><a href="mailto:laine@jbksearch.com" class="lead"><i class="bi bi-envelope"></i>
+                    laine@jbksearch.com</a></p>
+
+
+
+            <p class="mb-2"><a href="https://www.linkedin.com/in/laine-tongren-7845a8255/" class="lead"
+                    target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
+        </div>
+    </div>
+
+    <!-- Full bio section -->
+    <div>
+        <p class="lead">Hi, my name is Laine! I live in Chicago, where I work as a Sourcing Recruiter and a certified
+            Pilates instructor. In college I studied English, fueled by my passion for communication and connection.
+            Those passions are at the forefront of both of my roles, complemented by my enthusiasm for health and
+            wellness. I'm a creative person by nature and I love spending my free time making art, exploring outdoors,
+            traveling, and cooking for loved ones.
+        </p>
+
+        <p class="lead">As a Sourcing Recruiter at JBK Search, I’m thrilled to contribute to a team that shares my
+            passions, values authenticity, and is committed to making a positive impact in the biopharma industry. In my
+            role, I focus on finding and engaging top talent through various sourcing techniques, conducting thorough
+            interviews, and working closely with hiring managers to understand and meet their needs. Building strong
+            relationships and ensuring a smooth recruitment process is my priority. I’m excited about connecting with
+            exceptional individuals and playing a role in the meaningful work we do here at JBK Search!</p>
+    </div>
+</div>
+
+
+{% endblock %}

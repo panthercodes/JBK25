@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Services - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="padding-top: 100px;">
+        <img class="services-img" src="../static/img/jbk-services.png"></img>
+    </div>
+</div>
+<hr style="width: 80%; margin: 50px auto;">
+<!-- BEGIN SERVICES SECTION -->
+
+
+<div class="container-fluid services-container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 ms-5 ">
+            <img src="../static/img/searching-services.png" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <h2>Permanent Placement - We go <span style="color: #439539;">beyond</span> just resumes</h2>
+                <p class="lead"> Our Permanent Placement service is all about finding the right long-term fit for our
+                    client's team. We
+                    deep dive into a targeted search, we
+                    conduct behavioral-based interviews, and personalized assessments to connect you with candidates who
+                    not only have the skills but also align with your company’s culture, values, and goals. We’re here
+                    to make sure the talent you hire is ready to grow with you.
+                </p>
+                <p class="lead">
+                    At JBK Search, we specialize in both contingent and retained search, providing customized solutions
+                    to meet the unique hiring needs of our clients.
+                    In both cases, our industry expertise and proven methods ensure you get the best candidates for your
+                    organization
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid"></div>
+<div class="row justify-content-center align-items-center">
+    <div class="col-md-4 ms-5 ">
+    </div>
+    <div class="col-md-5">
+        <div>
+            <h2>Staffing & Contract Search</h2>
+            <p class="lead">Our Staffing & Contract search services are designed to provide flexible, short-term
+                solutions that adapt to your organization’s immediate needs. Whether you’re facing a temporary
+                increase
+                in workload, a project deadline, or the need for specialized expertise, JBK Search quickly connects
+                you
+                with highly qualified candidates. JBK Search is committed to recruiting and managing temporary and
+                contract talent for the
+                pharmaceutical and biotech industries.</p>
+            <p class="lead">Many startups and fast-growing companies are using temporary
+                staffing
+                to help grow their organizations. JBK Search can help you find the top talent who will help you
+                reach
+                your
+                goals. We take care of the administrative costs, benefits, and payroll. We are the employees of
+                record
+                for
+                our clients.</p>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="container-fluid services-cta mb-4 p-4">
+    <h2 class="text-center">JBK Search recruits for companies across the globe who share our belief that anything is
+        possible.</h2>
+
+    <!-- Two Side-by-Side Text Divs -->
+    <div class="justify-content-center mt-4">
+        <!-- Left Text Div -->
+        <div class="text-center container">
+            <p class="lead">With thousands candidates in our database and over 30 years of experience in executive
+                search, we
+                are highly confident we can find the match for you! Our tailored approach to recruiting ensures that we
+                deliver the best talent, perfectly
+                aligned with your
+                company's needs and goals.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4 text-center">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

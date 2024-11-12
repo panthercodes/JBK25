@@ -1,0 +1,51 @@
+{% extends "blog_base.html" %}
+
+{% block title %}5 Key Tips to Ace Your Next Interview{% endblock %}
+
+{% block content %}
+<div class="blog-post">
+    <h1>5 Key Tips to Ace Your Next Interview</h1>
+    <p>Published on: <em>September 15, 2024</em></p>
+
+    <img src="{{ url_for('static', filename='img/blog1.jpg') }}" class="img-fluid mb-4" alt="Interview Tips">
+    <!-- NEED TO ADD A TAG OR SOMETHING TO CATEGORIZE THE POSTS. EXAMPLE: Interview Tips, Industry News, Company News, etc-->
+
+    <p>
+        In today's competitive job market, landing an interview is just the first step. Preparation and execution during
+        the interview will determine if you secure the role. Here are five key tips that will help you stand out and ace
+        your next interview.
+    </p>
+    <!-- Add the blog content here -->
+    <h2>Tip 1: Research the Company</h2>
+
+    <div class="research-section">
+        <h5><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> Why Research Is
+            Important:</h5>
+        <p class="lead">Employers want to see that you’re genuinely interested in their company, not just any job.
+            Researching helps you tailor your answers to align with the company’s mission, values, and goals.</p>
+    </div>
+    <div class="research-section">
+        <h5><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> How to Research:
+        </h5>
+        <p class="lead">Go beyond the company’s website. Read press releases, news articles, and reviews about the
+            organization. Research competitors and industry trends. This shows you have a well-rounded understanding of
+            where the company fits into the bigger picture.</p>
+    </div>
+    <div class="research-section">
+        <h5><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> Examples:</h5>
+        <p class="lead"> Provide anecdotal examples of candidates who impressed employers with their in-depth knowledge
+            of
+            the company.</p>
+    </div>
+
+
+
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+
+    <a href="{{ url_for('blog') }}" class="btn btn-primary mt-4 mb-4">Back to Blog</a>
+</div>
+{% endblock %}

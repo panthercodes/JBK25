@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - JBK Search Corporation{% endblock %}
+
+
+{% block content %}
+<!-- Blog Header -->
+<!-- Hero Banner -->
+<section class="hero-banner">
+    <!-- Left side text content -->
+    <div class="hero-content-left">
+        <h1>Industry Insights & Stories</h1>
+        <p>Follow us on social media: <a href="https://www.facebook.com/JBKSearch" target="_blank"><i
+                    class="bi bi-facebook h2 social-link"></i></a>
+
+            <!-- <a href=""><i class="bi bi-tiktok h2 social-link"></i></a> -->
+            <a href="https://www.linkedin.com/company/jbk-search/?viewAsMember=true" target="_blank"><i
+                    class="bi bi-linkedin h2 social-link"></i></a>
+        </p>
+    </div>
+
+    <!-- Right side image or additional text -->
+    <!-- <div class="hero-content-right">
+        <h2>Featured Post</h2>
+        <img src="../img/blog-featured.jpg" alt="Featured Blog Post Image">
+    </div> -->
+    <img class="blog-img" src="../static/img/canva-banner.jpeg" alt="">
+</section>
+
+<!-- Blog Post Grid -->
+<section class="container blog-grid">
+    <div class="row">
+        <!-- Blog Post 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card blog-card h-100 d-flex flex-column">
+                <img src="../img/blog1.jpg" class="card-img-top" alt="Interview Tips 1">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">5 Key Tips to Ace Your Next Interview</h5>
+                    <p class="card-text">Get expert advice on how to impress recruiters and secure your next role.</p>
+                    <div class="mt-auto">
+                        <a href="{{url_for('blog1')}}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card blog-card h-100 d-flex flex-column">
+                <img src="../img/blog2.jpg" class="card-img-top" alt="Inspiration 2">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">How working with drug companies fuels our passion</h5>
+                    <p class="card-text">Discover the importance of networking and how it can open new opportunities.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="{{url_for('blog2')}}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card blog-card h-100 d-flex flex-column">
+                <img src="../img/blog3.jpg" class="card-img-top" alt="Industry News 3">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Understanding the Future of Biotech Recruiting</h5>
+                    <p class="card-text">A deep dive into trends shaping the biotech industry and what to expect next.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="{{url_for('blog3')}}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Candidates{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="padding-top:125px;">
+    <!-- Top Portion: Contact Us and Description -->
+    <div class="text-center">
+        <h2>Contact Us - Employers</h2>
+        <p>
+            JBK Search connects top candidates with leading organizations across the biotech industry. Please fill out
+            the form below to get in touch, and don't forget to upload the job description or a short message about your
+            hiring needs!
+        </p>
+        <hr>
+    </div>
+
+    <!-- Contact Form Container -->
+    <div class="container contact-container" style="width: 80%;">
+        <div class="row">
+            <!-- Left Side: Contact Information -->
+            <div class="col-md-6 contact-info">
+                <h3>JBK Search Corporation</h3>
+                <p>317-245-8085</p>
+                <p>brenda@jbksearch.com</p>
+            </div>
+
+            <!-- Right Side: Candidate Contact Form -->
+            <div class="col-md-6">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="candidateName">Name</label>
+                            <input type="text" class="form-control" id="candidateName" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneType">Phone Number</label>
+
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                        <!-- Radio buttons for Phone Type -->
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="phoneType" id="officePhone"
+                                    value="office" required>
+                                <label class="form-check-label" for="officePhone">Office</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="phoneType" id="cellPhone"
+                                    value="cell">
+                                <label class="form-check-label" for="cellPhone">Cell</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="candidateEmail">Email</label>
+                        <input type="email" class="form-control" id="candidateEmail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="jobInfoUpload">Upload Job Description</label>
+                        <input type="file" class="form-control" id="jobInfoUpload" accept=".pdf,.doc,.docx">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

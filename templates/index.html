@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}Home - JBK Search Corporation{% endblock %}
+
+
+{% block content %}
+<!-- Begin Herobox -->
+<div class="hero-box d-flex justify-content-center align-items-center text-center">
+    <!-- Overlay layer -->
+    <div class="overlay"></div>
+    <div class="overlay-content">
+        <div class="typing-container">
+            <h1 class="hero-title">The Right Person In The Right Organization Can</h1>
+            <h2 id="typing-text" class="hero-subtitle">Make All The Difference</h2>
+        </div>
+    </div>
+</div> <!-- End Herobox -->
+
+
+
+<!-- CTA SECTION -->
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading mt-4
+        ">
+            DON'T QUIT YOUR <span style="color: #439539;">DAYDREAM!</span>
+        </h1>
+        <p class="h3  text-bold">Whether you're a <span style="color: #439539;">job seeker</span> looking to
+            progress in your career, or a <span style="color: #439539;">hiring
+                authority</span> needing to add to their team, JBK Search has the recruiting solutions for you.</p>
+        <p>
+            <a href="{{ url_for('jobs') }}" class="btn btn-primary btn-lg my-2">Job Seekers</a>
+            <a href="{{ url_for('services') }}" class="btn btn-secondary btn-lg my-2">Hiring Solutions</a>
+        </p>
+    </div>
+</section>
+<!-- END CTA SECTION -->
+
+<!-- BEGIN ABOUT US SECTION -->
+<div class="about-us py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>About <span style="color: #439539;">JBK SEARCH</span></h2>
+                <p>JBK Search is a retained executive search firm whose primary aim is to help companies thrive and
+                    succeed by assisting them in attracting, identifying, hiring, and retaining the best people.</p>
+                <p>We were founded in 1999 by a recruiting industry veteran with a vision to create a search firm
+                    that would help companies help patients live longer and healthier lives because of the candidates we
+                    place.</p>
+                <p>“Sometimes you develop a passion for something because of some personal experience. That has been
+                    my case. What a profound responsibility it is to do this work” - Brenda Patterson, Founder & CEO
+                </p>
+            </div>
+            <div class="col-md-5 offset-md-1 d-flex justify-content-center">
+                <div class="mb-5 text-center">
+                    <a href="{{ url_for('about') }}#our-team" class="btn btn-primary btn-lg mt-4">Meet The Team</a>
+                    <a href="#" class="btn btn-primary btn-lg mt-4">#NoRest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second Section -->
+<div class="container-fluid about-us about-container py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-1 order-1 d-flex justify-content-center">
+                <!-- Add image or any media here -->
+                <img class="recruit-img img-fluid" src="../static/img/recruitment-homepage.png" alt="">
+            </div>
+            <div class="col-md-6 order-md-2 order-2">
+                <h2>Recruiting Excellency<span style="color: #439539;"> Made Simple</span></h2>
+                <p>Our clients range from early stage startups to Fortune 500 companies. Instead of passively placing
+                    ads and hoping the right candidate applies, we use our no-fail system to hunt the best candidate for
+                    the job.</p>
+                <p>We are experienced recruiters. We are trusted advisors. Our clients seek us out because of our
+                    industry experience and our straightforward, no-nonsense approach to recruiting:</p>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2"> We create a
+                    profile of the candidate based on the skills needed and the personality desired</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2"> We present the
+                    candidate to the leadership team</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2"> We negotiate
+                    offers</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2"> We stay in touch
+                    with the candidate & client after the placement to address any concerns</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END ABOUT US SECTION -->
+
+<!-- BEGIN AREAS OF EXPERTISE SECTION -->
+<div class="container-fluid expertise pt-4">
+    <div class="container my-4">
+        <h1 class="text-center" style="background-color: rgb(0, 0, 0);color: white;"></h1>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Candidate Advocacy</h5>
+                        <p class="card-text">Upload your resume to be added to our database. We send out a monthly
+                            newsletter to all our candidates with information about industry insights, interview tips
+                            and general coaching advice. We are here to advocate for you! Take the first step towards
+                            your dream job now. </p>
+                        <a href="#" class="btn btn-primary mt-1">Join JBK Newsletter</a>
+                        <a href="{{ url_for('jobs') }}" class="btn btn-primary mt-1">Explore Open Roles</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Client Services</h5>
+                        <p class="card-text">Faced with a new project or experiencing talent shortages? We can
+                            accelerate
+                            and
+                            strengthen your workforce when it matters most. Our staffing and permanent recruiting
+                            services connect you with top talent, ensuring your organization’s growth and long-term
+                            success.</p>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-1">Let's build your team!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END AREAS OF EXPERTISE SECTION -->
+
+
+
+    <div class="container-fluid quote-container py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="quote-section">
+                        <blockquote class="blockquote">
+                            <h3>Focus on Your Business, We'll Handle the Talent</h3>
+                            <footer class="blockquote lead">
+
+                                At our core is a proven, no-fail system that combines our expert team, a streamlined
+                                process, and an extensive network of vetted candidates. Every search is guided by our
+                                Founder & President, Brenda Patterson, ensuring hands-on leadership from the first step
+                                to successful onboarding.</footer>
+
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center mb-4">
+                    <div class="image-section mt-4">
+                        <img src="../static/img/Jake-Patterson-–-Director-Outreach.jpg" class="img-fluid reduced-size"
+                            alt="Jake Patterson">
+                        <p class="text-center mt-3">- Jake Patterson, Director of Operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPANY CAROUSEL -->
+    <div class="container">
+        <div class="scroller m-auto">
+            <ul class="tag-list scroller__inner">
+                <img src="../static/img/Client-Logo-1-150x150.png">
+                <img src="../static/img/Client-Logo-3-150x150.png">
+                <img src="../static/img/Client-Logo-4-150x150.jpg">
+                <img src="../static/img/Client-Logo-5-150x150.jpg">
+                <img src="../static/img/Client-Logo-6-150x150.jpg">
+                <img src="../static/img/Client-Logo-7-150x150.jpg">
+                <img src="../static/img/Client-Logo-8-150x150.jpg">
+                <img src="../static/img/Client-Logo-9-150x150.jpg">
+                <img src="../static/img/Client-Logo-10-150x150.jpg">
+                <img src="../static/img/Client-Logo-11-150x150.jpg">
+                <img src="../static/img/Client-Logo-12-150x150.jpg">
+                <img src="../static/img/Client-Logo-13-150x150.jpg">
+                <img src="../static/img/Client-Logo-14-150x150.png">
+                <img src="../static/img/Client-Logo-15-150x150.png">
+                <img src="../static/img/Client-Logo-16-150x150.png">
+                <img src="../static/img/Client-Logo-17-150x150.png">
+                <img src="../static/img/Client-Logo-18-150x150.png">
+                <img src="../static/img/Client-Logo-19-150x150.png">
+                <img src="../static/img/Client-Logo-20-150x150.jpg">
+            </ul>
+        </div>
+    </div>
+    <!-- END CAROUSEL -->
+
+    {% endblock %}
